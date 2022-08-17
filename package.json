@@ -48,5 +48,17 @@
   },
   "engines": {
     "node": ">=12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maitkaa/vue-in-ads"
+  },
+  "author": "AlmightyTech",
+  "license": "ISC",
+  "keywords": [
+    "vue3",
+    "vue",
+    "In-Ads",
+    "map"
+  ]
 }
