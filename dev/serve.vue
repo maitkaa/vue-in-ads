@@ -1,5 +1,5 @@
 <script>
-import { defineComponent } from 'vue';
+import {defineComponent} from 'vue';
 import VueInAds from '@/vue-in-ads.vue';
 
 export default defineComponent({
@@ -19,13 +19,18 @@ export default defineComponent({
       "baseLayers": ["ORTOFOTO"],
       "mapLayers": ["AADRESS", "KATASTRIYKSUS"],
       "WMS": []
-    }
+    },
+    location: {}
   })
 });
 </script>
 
 <template>
   <div id="app">
-    <vue-in-ads :config="config" />
+    <vue-in-ads :config="config" :location="location"/>
+    <h2>Chosen Location:</h2>
+    <pre>
+      {{ location }}
+    </pre>
   </div>
 </template>
